@@ -42,6 +42,27 @@ p {
   color: #00f;
 }
 
+.content {
+  background-color: antiquewhite;
+  height: 100%;
+  padding: 50px;
+  border: 5px solid rgb(151, 100, 100);
+}
+
+.content p {
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.bold-style {
+  height: 20px;
+  background-color: aqua;
+  margin: 10px;
+  padding: 20px;
+  border: 2px dotted brown;
+  width: 500px; /* не работает потому что b строчный элемент */
+}
+
 /* .task-justify {} */
 
 /* .task-normal {} */
