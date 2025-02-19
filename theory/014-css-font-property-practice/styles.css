@@ -54,6 +54,10 @@ p {
   text-align: center;
 }
 
+.content span {
+  text-decoration: underline;
+}
+
 .bold-style {
   height: 20px;
   background-color: aqua;
