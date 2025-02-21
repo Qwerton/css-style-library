@@ -22,6 +22,21 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
+      transition: 0.3s;
+    }
+
+    .circle:hover {
+      width: 70px;
+      height: 70px;
+      background-color: yellow;
+      box-shadow: 5px 5px 10px rgb(75, 75, 75);
+      transition: 0.3s;
+    }
+
+    .circle:hover + .rectangle {
+      background-color: green;
+      box-shadow: 5px 5px 10px rgb(58, 58, 58);
+      transition: 0.3s;
     }
 
     .rectangle {
@@ -32,6 +47,7 @@
       width: 200px;
       height: 100px;
       background-color: blue;
+      transition: 0.3s;
     }
   </style>
 </head>
