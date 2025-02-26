@@ -15,18 +15,38 @@
         body {
             /* Используется шрифт Montserrat для текста внутри body */
             font-family: 'Montserrat', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
         }
 
         .card {
             /* Цвет фона карточки */
-            background-color: #fff;
+            background-color: #e9e9e9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgb(201, 201, 201);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 200px;
         }
 
         .card h2 {
             /* Внутренний отступ для заголовка h2 */
             margin: 5px;
+            text-align: center;
+            background-color: #8d8d8d;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
         }
 
+        .card:last-child h2 {
+          color: rgb(255, 241, 45);
+        }
 
         .price {
             /* Размер шрифта цены */
@@ -39,16 +59,25 @@
         .button {
             /* Цвет фона кнопки */
             /* background-color: #4CAF50; */
+            text-decoration: none;
+            color: white;
+            background-color: #37873b;
+            padding: 9px 20px;
+            margin: 20px;
+            border-radius: 5px;
+            transition: .3s;
         }
 
         .button:hover {
             /* Изменение цвета фона кнопки при наведении */
-            background-color: #37873b;
+            background-color: #45af4a;
+            transition: .3s;
         }
 
         ul {
             /* Удаление маркеров списка */
             list-style: none;
+            padding: 0;
         }
 
         li {
@@ -62,6 +91,9 @@
                 flex-direction: column;
                 /* Выравнивание элементов по центру при изменении направления */
                 align-items: center;
+            }
+            .card {
+              max-width: 220px;
             }
         }
     </style>
